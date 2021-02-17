@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="cam_pmodtest_arthur_processing_system7_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_pmodtest_arthur_comandostop_v1_0_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_comandostop_v1_0_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_pmodtest_arthur_ov7670_controller_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_ov7670_controller_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_pmodtest_arthur_Address_Generator_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_Address_Generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_pmodtest_arthur_rst_ps7_0_100M_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_pmodtest_arthur_RGB_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_RGB_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_pmodtest_arthur_VGA_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_VGA_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_pmodtest_arthur_ov7670_capture_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_ov7670_capture_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_pmodtest_arthur_debounce_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_debounce_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_pmodtest_arthur_blk_mem_gen_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_pmodtest_arthur_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_pmodtest_arthur_auto_pc_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/cam_pmodtest_arthur_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="cam_pmodtest_arthur_processing_system7_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_comandostop_v1_0_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_ov7670_controller_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_Address_Generator_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_RGB_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_VGA_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_ov7670_capture_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_debounce_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_clk_wiz_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_auto_pc_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_processing_system7_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_comandostop_v1_0_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_ov7670_controller_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_Address_Generator_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_RGB_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_VGA_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_ov7670_capture_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_debounce_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_clk_wiz_0_0_synth_1"/>
+		<Parent Id="cam_pmodtest_arthur_auto_pc_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
