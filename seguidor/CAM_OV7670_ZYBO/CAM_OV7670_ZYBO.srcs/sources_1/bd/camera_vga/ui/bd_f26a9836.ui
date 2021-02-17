@@ -1,0 +1,65 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 420 -defaultsOSRD
+preplace port ov7670_reset -pg 1 -y 900 -defaultsOSRD
+preplace port ov7670_pclk -pg 1 -y 30 -defaultsOSRD
+preplace port led_config_finished -pg 1 -y 810 -defaultsOSRD
+preplace port ov7670_xclk -pg 1 -y 960 -defaultsOSRD
+preplace port ov7670_pwdn -pg 1 -y 930 -defaultsOSRD
+preplace port ov7670_href -pg 1 -y 130 -defaultsOSRD
+preplace port ov7670_vsync -pg 1 -y 100 -defaultsOSRD
+preplace port button_debounce -pg 1 -y 910 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 450 -defaultsOSRD
+preplace port HSYNC_O -pg 1 -y 350 -defaultsOSRD
+preplace port ov7670_sioc -pg 1 -y 840 -defaultsOSRD
+preplace port VSYNC_O -pg 1 -y 380 -defaultsOSRD
+preplace port ov7670_siod -pg 1 -y 870 -defaultsOSRD
+preplace portBus BLUE_O -pg 1 -y 320 -defaultsOSRD
+preplace portBus RED_O -pg 1 -y 260 -defaultsOSRD
+preplace portBus GREEN_O -pg 1 -y 290 -defaultsOSRD
+preplace portBus ov7670_d -pg 1 -y 160 -defaultsOSRD
+preplace inst ov7670_capture_0 -pg 1 -lvl 1 -y 120 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -y 740 -defaultsOSRD
+preplace inst ov7670_controller_0 -pg 1 -lvl 3 -y 890 -defaultsOSRD
+preplace inst debounce_0 -pg 1 -lvl 2 -y 900 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 140 -defaultsOSRD
+preplace inst ov7670_vga_0 -pg 1 -lvl 2 -y 330 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 340 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -y 520 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 3 1 960J
+preplace netloc ov7670_controller_0_reset 1 3 1 NJ
+preplace netloc ov7670_href_1 1 0 1 NJ
+preplace netloc ov7670_vga_0_frame_addr 1 2 1 590
+preplace netloc button_debounce_1 1 0 2 NJ 910 NJ
+preplace netloc ov7670_vga_0_vga_vsync 1 2 2 NJ 360 960J
+preplace netloc ov7670_controller_0_config_finished 1 3 1 940J
+preplace netloc ov7670_capture_0_addr 1 1 2 NJ 100 590
+preplace netloc ov7670_controller_0_xclk 1 3 1 950J
+preplace netloc ov7670_vsync_1 1 0 1 10J
+preplace netloc xlconstant_0_dout 1 3 1 940
+preplace netloc processing_system7_0_FIXED_IO 1 3 1 NJ
+preplace netloc ov7670_controller_0_pwdn 1 3 1 950J
+preplace netloc ov7670_d_1 1 0 1 10J
+preplace netloc ov7670_capture_0_dout 1 1 2 NJ 120 N
+preplace netloc debounce_0_o 1 2 1 N
+preplace netloc clk_wiz_0_clk_out1 1 1 1 240
+preplace netloc ov7670_vga_0_vga_blue 1 2 2 NJ 320 NJ
+preplace netloc ov7670_vga_0_vga_green 1 2 2 600J 290 NJ
+preplace netloc ov7670_vga_0_vga_red 1 2 2 NJ 280 960J
+preplace netloc Net1 1 0 3 10 30 NJ 30 600
+preplace netloc blk_mem_gen_0_doutb 1 1 2 250 220 N
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 10 440 NJ 440 620J 370 950
+preplace netloc Net 1 1 2 240 450 610
+preplace netloc ov7670_vga_0_vga_hsync 1 2 2 NJ 340 960J
+preplace netloc Net2 1 3 1 950J
+preplace netloc ov7670_controller_0_sioc 1 3 1 960J
+preplace netloc ov7670_capture_0_we 1 1 2 NJ 140 N
+levelinfo -pg 1 -10 130 430 790 1040 -top 0 -bot 1000
+"
+}
+{
+   "da_ps7_cnt":"1"
+}
