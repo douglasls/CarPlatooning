@@ -420,3 +420,148 @@ INFO: [Common 17-83] Releasing license: Implementation
 place_design failed
 ERROR: [Common 17-69] Command failed: Placer could not place all instances
 INFO: [Common 17-206] Exiting Vivado at Tue Feb 16 19:29:40 2021...
+
+*** Running vivado
+    with args -log cam_pmodtest_arthur_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source cam_pmodtest_arthur_wrapper.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source cam_pmodtest_arthur_wrapper.tcl -notrace
+Command: open_checkpoint cam_pmodtest_arthur_wrapper_opt.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 250.266 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'cam_pmodtest_arthur_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.412 . Memory (MB): peak = 1145.766 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.418 . Memory (MB): peak = 1145.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1145.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
+open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 1145.766 ; gain = 895.500
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ov7670_siod expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1145.766 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: ccd068d8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1145.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1145.766 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (1) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 1 sites.
+	Term: o7670_pwdn
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (1) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 1 sites.
+	Term: o7670_pwdn
+
+
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |    17 | LVCMOS33(17)                                                           |                                          |        |  +3.30 |    YES |     |
+| 35 |    50 |    13 | LVCMOS33(13)                                                           |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   100 |    30 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | ov7670_d[0]          | LVCMOS33        | IOB_X0Y10            | T17                  |                      |
+|        | ov7670_d[2]          | LVCMOS33        | IOB_X0Y31            | U17                  |                      |
+|        | ov7670_d[3]          | LVCMOS33        | IOB_X0Y13            | W16                  |                      |
+|        | ov7670_d[4]          | LVCMOS33        | IOB_X0Y43            | V13                  |                      |
+|        | ov7670_d[5]          | LVCMOS33        | IOB_X0Y42            | V12                  |                      |
+|        | ov7670_d[6]          | LVCMOS33        | IOB_X0Y7             | V18                  |                      |
+|        | ov7670_d[7]          | LVCMOS33        | IOB_X0Y37            | R14                  | *                    |
+|        | ov7670_href          | LVCMOS33        | IOB_X0Y27            | U15                  |                      |
+|        | ov7670_pclk          | LVCMOS33        | IOB_X0Y38            | P14                  |                      |
+|        | ov7670_sioc          | LVCMOS33        | IOB_X0Y40            | T14                  |                      |
+|        | ov7670_siod          | LVCMOS33        | IOB_X0Y28            | U14                  |                      |
+|        | ov7670_vsync         | LVCMOS33        | IOB_X0Y39            | T15                  |                      |
+|        | ov7670_xclk          | LVCMOS33        | IOB_X0Y8             | V17                  |                      |
+|        | vga_b[0]             | LVCMOS33        | IOB_X0Y21            | P20                  |                      |
+|        | vga_g[1]             | LVCMOS33        | IOB_X0Y22            | N20                  |                      |
+|        | vga_hs               | LVCMOS33        | IOB_X0Y23            | P19                  |                      |
+|        | vga_vs               | LVCMOS33        | IOB_X0Y49            | R19                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | led_config_finished  | LVCMOS33        | IOB_X0Y54            | M14                  |                      |
+|        | ov7670_d[1]          | LVCMOS33        | IOB_X0Y50            | J15                  |                      |
+|        | ov7670_reset         | LVCMOS33        | IOB_X0Y62            | H15                  |                      |
+|        | vga_b[1]             | LVCMOS33        | IOB_X0Y85            | M20                  |                      |
+|        | vga_b[2]             | LVCMOS33        | IOB_X0Y80            | K19                  |                      |
+|        | vga_b[3]             | LVCMOS33        | IOB_X0Y72            | J18                  |                      |
+|        | vga_g[0]             | LVCMOS33        | IOB_X0Y71            | H18                  |                      |
+|        | vga_g[2]             | LVCMOS33        | IOB_X0Y82            | L19                  |                      |
+|        | vga_g[3]             | LVCMOS33        | IOB_X0Y79            | J19                  |                      |
+|        | vga_r[0]             | LVCMOS33        | IOB_X0Y86            | M19                  |                      |
+|        | vga_r[1]             | LVCMOS33        | IOB_X0Y81            | L20                  |                      |
+|        | vga_r[2]             | LVCMOS33        | IOB_X0Y66            | J20                  |                      |
+|        | vga_r[3]             | LVCMOS33        | IOB_X0Y63            | G20                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 82a2a70e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1225.855 ; gain = 80.090
+Phase 1 Placer Initialization | Checksum: 82a2a70e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1225.855 ; gain = 80.090
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 82a2a70e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1225.855 ; gain = 80.090
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 2 Warnings, 0 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  5 10:22:50 2021...

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="camera_vga_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Teste_CAM_VGA/camera/camera.runs/camera_vga_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="camera_vga_ov7670_controller_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Teste_CAM_VGA/camera/camera.runs/camera_vga_ov7670_controller_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="camera_vga_ov7670_vga_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Teste_CAM_VGA/camera/camera.runs/camera_vga_ov7670_vga_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="camera_vga_processing_system7_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Teste_CAM_VGA/camera/camera.runs/camera_vga_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="camera_vga_blk_mem_gen_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Teste_CAM_VGA/camera/camera.runs/camera_vga_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="camera_vga_debounce_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Teste_CAM_VGA/camera/camera.runs/camera_vga_debounce_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="camera_vga_ov7670_capture_0_0_synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Teste_CAM_VGA/camera/camera.runs/camera_vga_ov7670_capture_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/DLustosa/Desktop/Teste_CAM_VGA/camera/camera.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="camera_vga_clk_wiz_0_0_synth_1"/>
+		<Parent Id="camera_vga_ov7670_controller_0_0_synth_1"/>
+		<Parent Id="camera_vga_ov7670_vga_0_0_synth_1"/>
+		<Parent Id="camera_vga_processing_system7_0_0_synth_1"/>
+		<Parent Id="camera_vga_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="camera_vga_debounce_0_0_synth_1"/>
+		<Parent Id="camera_vga_ov7670_capture_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

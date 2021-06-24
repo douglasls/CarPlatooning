@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/DLustosa/Desktop/Exemplo_vivado/teste_cam_arthur/teste_cam_arthur.runs/impl_1'
+HD_PWD='C:/Users/DLustosa/Desktop/CarPlatooning/seguidor/teste_cam_arthur/teste_cam_arthur.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .place_design.begin.rst
 EAStep vivado -log cam_pmodtest_arthur_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source cam_pmodtest_arthur_wrapper.tcl -notrace
 
 
