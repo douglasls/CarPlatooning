@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="rgb_hsv_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="rgb_hsv" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2610000001fs"></ZoomEndTime>
+      <Cursor1Time time="2100000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="209"></NameColumnWidth>
+      <ValueColumnWidth column_width="178"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/rgb_hsv/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/RGB_R" type="array">
+      <obj_property name="ElementShortName">RGB_R[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB_R[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/RGB_G" type="array">
+      <obj_property name="ElementShortName">RGB_G[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB_G[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/RGB_B" type="array">
+      <obj_property name="ElementShortName">RGB_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB_B[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/seq_rgb" type="array">
+      <obj_property name="ElementShortName">seq_rgb[2:0]</obj_property>
+      <obj_property name="ObjectShortName">seq_rgb[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/max" type="array">
+      <obj_property name="ElementShortName">max[7:0]</obj_property>
+      <obj_property name="ObjectShortName">max[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/min" type="array">
+      <obj_property name="ElementShortName">min[7:0]</obj_property>
+      <obj_property name="ObjectShortName">min[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/num" type="array">
+      <obj_property name="ElementShortName">num[13:0]</obj_property>
+      <obj_property name="ObjectShortName">num[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/dif" type="array">
+      <obj_property name="ElementShortName">dif[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dif[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/den" type="array">
+      <obj_property name="ElementShortName">den[7:0]</obj_property>
+      <obj_property name="ObjectShortName">den[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/HSV_H" type="array">
+      <obj_property name="ElementShortName">HSV_H[8:0]</obj_property>
+      <obj_property name="ObjectShortName">HSV_H[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/HSV_S" type="array">
+      <obj_property name="ElementShortName">HSV_S[7:0]</obj_property>
+      <obj_property name="ObjectShortName">HSV_S[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rgb_hsv/HSV_V" type="array">
+      <obj_property name="ElementShortName">HSV_V[7:0]</obj_property>
+      <obj_property name="ObjectShortName">HSV_V[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
