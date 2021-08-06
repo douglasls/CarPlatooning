@@ -9,18 +9,19 @@ module centroide_v2(
     
 wire x;
 wire y;
-reg [7:0] posX;
-reg [7:0] posY;
-reg [15:0] area;
-reg [15:0] sumX;
-reg [15:0] sumY;
-
+//reg color;
+reg [7:0] posX = 8'd0;
+reg [7:0] posY = 8'd1;
+reg [15:0] area = 15'd0;
+reg [15:0] sumX = 15'd0;
+reg [15:0] sumY = 15'd0;
 
 assign x = (posX < 8) ? 1'b1 : 1'b0;
 assign y = (posY < 8) ? 1'b1 : 1'b0;
 
 always @ (posedge CLK)
 begin
+
     case ({x,y})
         2'b00: // fim da imagem
             begin
@@ -30,8 +31,8 @@ begin
                         sumX <= sumX + posX;
                         sumY <= sumY + posY;
                     end
-                CX = sumX / area;
-                CY = sumY / area;
+                CX <= sumX / area;
+                CY <= sumY / area;
                 posX <= 8'd1;
                 posY <= 8'd1;
                 sumX <= 16'd0;
@@ -62,7 +63,7 @@ begin
             end
         2'b11: // terminou pixel
             begin
-                posX <= posX + 8'd1;
+                posX = posX + 8'd1;
                 if(IMG > 250 && IMG < 255)
                     begin
                         area <= area + 16'd1;
