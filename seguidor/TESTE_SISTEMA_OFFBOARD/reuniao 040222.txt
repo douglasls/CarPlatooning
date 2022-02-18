@@ -1,0 +1,7 @@
+pegar os valores RGB juntos
+
+fazer and logico e shift de 8 bits para a direita para o primeiro
+
+fazer and logico e shift de 4 bits para a direita para o segundo
+
+terceiro só fazer and logico
