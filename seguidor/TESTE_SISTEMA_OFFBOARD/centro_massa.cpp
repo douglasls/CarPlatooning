@@ -65,9 +65,9 @@ int main()
                     CX = sumX / area;
                     CY = sumY / area;
                     cout << CX << " " << CY << endl;
-                    area = 0;
-                    sumX = 0;
-                    sumY = 0;
+                    //area = 0;
+                    //sumX = 0;
+                    //sumY = 0;
                 }
             }
             if(valR == 254)

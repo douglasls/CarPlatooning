@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Mon Feb 21 01:06:35 2022
+# Process ID: 9944
+# Current directory: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/VGA/ov7670_zybo/ov7670_zybo.runs/impl_1
+# Command line: vivado.exe -log camera_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source camera_wrapper.tcl -notrace
+# Log file: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/VGA/ov7670_zybo/ov7670_zybo.runs/impl_1/camera_wrapper.vdi
+# Journal file: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/VGA/ov7670_zybo/ov7670_zybo.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source camera_wrapper.tcl -notrace

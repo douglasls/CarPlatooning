@@ -1,0 +1,175 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Feb 23 10:39:07 2022
+# Process ID: 7372
+# Current directory: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9532 C:\Users\dougl\Desktop\CarPlatooning\seguidor\TESTES_CAM_ZYBO\CAPTURE_FRAME\Captura_frame\Captura_frame.xpr
+# Log file: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/vivado.log
+# Journal file: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 845.242 ; gain = 182.563
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd
+file delete -force C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd
+open_bd_design {C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/ov7670_QVGA.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:module_ref:Image_Visualization:1.0 - Image_Visualization_0
+Adding component instance block -- xilinx.com:module_ref:ov7670_controller:1.0 - ov7670_controller_0
+Adding component instance block -- xilinx.com:module_ref:comandostop_v1_0:1.0 - comandostop_v1_0_0
+Adding component instance block -- xilinx.com:module_ref:debounce:1.0 - debounce_0
+Adding component instance block -- xilinx.com:module_ref:ov7670_capture:1.0 - ov7670_capture_0
+Adding component instance block -- xilinx.com:module_ref:rgb444_to_grayscale:1.0 - rgb444_to_grayscale_0
+Successfully read diagram <ov7670_QVGA> from BD file <C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/ov7670_QVGA.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1582.492 ; gain = 4.000
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/ov7670_QVGA.bd] -top
+INFO: [BD 41-1662] The design 'ov7670_QVGA.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/comandostop_v1_0_0/vsync_i
+
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/Image_Visualization_0/i_addr'(17) to net 'ov7670_capture_0_addr'(19) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/synth/ov7670_QVGA.vhd
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/Image_Visualization_0/i_addr'(17) to net 'ov7670_capture_0_addr'(19) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/sim/ov7670_QVGA.vhd
+VHDL Output written to : C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd
+add_files -norecurse C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd
+update_compile_order -fileset sources_1
+set_property top ov7670_QVGA_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+validate_bd_design -force
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [BD 41-927] Following properties on pin /Image_Visualization_0/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=ov7670_QVGA_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /ov7670_controller_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=ov7670_QVGA_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /comandostop_v1_0_0/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=ov7670_QVGA_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /debounce_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=ov7670_QVGA_processing_system7_0_0_FCLK_CLK0 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/comandostop_v1_0_0/vsync_i
+
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1582.492 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd
+file delete -force C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/ov7670_QVGA.bd] -top
+INFO: [BD 41-1662] The design 'ov7670_QVGA.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/comandostop_v1_0_0/vsync_i
+
+Wrote  : <C:\Users\dougl\Desktop\CarPlatooning\seguidor\TESTES_CAM_ZYBO\CAPTURE_FRAME\Captura_frame\Captura_frame.srcs\sources_1\bd\ov7670_QVGA\ov7670_QVGA.bd> 
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/Image_Visualization_0/i_addr'(17) to net 'ov7670_capture_0_addr'(19) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/synth/ov7670_QVGA.vhd
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/Image_Visualization_0/i_addr'(17) to net 'ov7670_capture_0_addr'(19) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/sim/ov7670_QVGA.vhd
+VHDL Output written to : C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd
+add_files -norecurse C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd
+update_compile_order -fileset sources_1
+set_property top ov7670_QVGA_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_run ov7670_QVGA_proc_sys_reset_0_0_synth_1
+reset_run ov7670_QVGA_processing_system7_0_0_synth_1
+reset_run ov7670_QVGA_xbar_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [BD 41-1662] The design 'ov7670_QVGA.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/comandostop_v1_0_0/vsync_i
+
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/Image_Visualization_0/i_addr'(17) to net 'ov7670_capture_0_addr'(19) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/synth/ov7670_QVGA.vhd
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/Image_Visualization_0/i_addr'(17) to net 'ov7670_capture_0_addr'(19) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/sim/ov7670_QVGA.vhd
+VHDL Output written to : C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+WARNING: [IP_Flow 19-3452] Invalid long/float value '1e+08' specified for parameter 'FREQ_HZ(CLKIF)' for ov7670_QVGA_xbar_0.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [IP_Flow 19-3452] Invalid long/float value '1e+08' specified for parameter 'FREQ_HZ(clock)' for ov7670_QVGA_proc_sys_reset_0_0.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Image_Visualization_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block comandostop_v1_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_capture_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb444_to_grayscale_0 .
+WARNING: [IP_Flow 19-3452] Invalid long/float value '1e+08' specified for parameter 'FREQ_HZ(CLK)' for ov7670_QVGA_auto_pc_0.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hw_handoff/ov7670_QVGA.hwh
+Generated Block Design Tcl file C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/hw_handoff/ov7670_QVGA_bd.tcl
+Generated Hardware Definition File C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.srcs/sources_1/bd/ov7670_QVGA/synth/ov7670_QVGA.hwdef
+[Wed Feb 23 10:56:07 2022] Launched ov7670_QVGA_proc_sys_reset_0_0_synth_1, ov7670_QVGA_processing_system7_0_0_synth_1, ov7670_QVGA_xbar_0_synth_1, ov7670_QVGA_auto_pc_0_synth_1...
+Run output will be captured here:
+ov7670_QVGA_proc_sys_reset_0_0_synth_1: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_proc_sys_reset_0_0_synth_1/runme.log
+ov7670_QVGA_processing_system7_0_0_synth_1: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_processing_system7_0_0_synth_1/runme.log
+ov7670_QVGA_xbar_0_synth_1: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_xbar_0_synth_1/runme.log
+ov7670_QVGA_auto_pc_0_synth_1: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_auto_pc_0_synth_1/runme.log
+[Wed Feb 23 10:56:08 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 1582.492 ; gain = 0.000
+launch_runs impl_1 -jobs 2
+[Wed Feb 23 11:00:15 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Feb 23 11:02:42 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.525 . Memory (MB): peak = 2216.633 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.525 . Memory (MB): peak = 2216.633 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2216.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 2322.453 ; gain = 739.961
+file mkdir C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.sdk
+file copy -force C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/impl_1/ov7670_QVGA_wrapper.sysdef C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.sdk/ov7670_QVGA_wrapper.hdf
+
+launch_sdk -workspace C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.sdk -hwspec C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.sdk/ov7670_QVGA_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.sdk -hwspec C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.sdk/ov7670_QVGA_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 23 11:16:35 2022...

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Feb 23 10:29:03 2022
+# Process ID: 6132
+# Current directory: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7312 C:\Users\dougl\Desktop\CarPlatooning\seguidor\TESTES_CAM_ZYBO\CAPTURE_FRAME\Captura_frame\Captura_frame.xpr
+# Log file: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/vivado.log
+# Journal file: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.xpr

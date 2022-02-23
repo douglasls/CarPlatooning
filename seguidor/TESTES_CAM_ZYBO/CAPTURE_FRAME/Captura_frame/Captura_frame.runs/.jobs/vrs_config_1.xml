@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ov7670_QVGA_Image_Visualization_0_0_synth_1" LaunchDir="C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_Image_Visualization_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ov7670_QVGA_proc_sys_reset_0_0_synth_1" LaunchDir="C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ov7670_QVGA_ov7670_controller_0_0_synth_1" LaunchDir="C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_ov7670_controller_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ov7670_QVGA_debounce_0_0_synth_1" LaunchDir="C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_debounce_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ov7670_QVGA_processing_system7_0_0_synth_1" LaunchDir="C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ov7670_QVGA_ov7670_capture_0_0_synth_1" LaunchDir="C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_ov7670_capture_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ov7670_QVGA_xbar_0_synth_1" LaunchDir="C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ov7670_QVGA_comandostop_v1_0_0_0_synth_1" LaunchDir="C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_comandostop_v1_0_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ov7670_QVGA_auto_pc_0_synth_1" LaunchDir="C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ov7670_QVGA_rgb444_to_grayscale_0_0_synth_1" LaunchDir="C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/ov7670_QVGA_rgb444_to_grayscale_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ov7670_QVGA_Image_Visualization_0_0_synth_1"/>
+		<Parent Id="ov7670_QVGA_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="ov7670_QVGA_ov7670_controller_0_0_synth_1"/>
+		<Parent Id="ov7670_QVGA_debounce_0_0_synth_1"/>
+		<Parent Id="ov7670_QVGA_processing_system7_0_0_synth_1"/>
+		<Parent Id="ov7670_QVGA_ov7670_capture_0_0_synth_1"/>
+		<Parent Id="ov7670_QVGA_xbar_0_synth_1"/>
+		<Parent Id="ov7670_QVGA_comandostop_v1_0_0_0_synth_1"/>
+		<Parent Id="ov7670_QVGA_auto_pc_0_synth_1"/>
+		<Parent Id="ov7670_QVGA_rgb444_to_grayscale_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
