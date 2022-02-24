@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log ov7670_QVGA_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov7670_QVGA_wrapper.tcl" );
+         "-log captura_frame_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source captura_frame_wrapper.tcl" );
 
 
 

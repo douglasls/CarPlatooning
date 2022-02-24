@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1645624567">
-  <File Type="PA-TCL" Name="ov7670_QVGA_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="ov7670_QVGA_wrapper_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="ov7670_QVGA_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="ov7670_QVGA_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="ov7670_QVGA_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="ov7670_QVGA_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="ov7670_QVGA_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ov7670_QVGA_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="ov7670_QVGA_wrapper_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1645682923">
+  <File Type="PA-TCL" Name="captura_frame_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="captura_frame_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="captura_frame_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="captura_frame_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="captura_frame_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="captura_frame_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="captura_frame_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="captura_frame_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="captura_frame_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Image_Visualization_S00_AXI.vhd">
@@ -77,14 +77,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/ov7670_QVGA/ov7670_QVGA.bd">
+    <File Path="$PSRCDIR/sources_1/bd/captura_frame/captura_frame.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/ov7670_QVGA/hdl/ov7670_QVGA_wrapper.vhd">
+    <File Path="$PSRCDIR/sources_1/bd/captura_frame/hdl/captura_frame_wrapper.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -92,12 +92,12 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ov7670_QVGA_wrapper"/>
+      <Option Name="TopModule" Val="captura_frame_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/Zybo_ov7670.xdc">
+    <File Path="$PSRCDIR/constrs_1/new/zybo_frame.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -117,14 +117,13 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ov7670_QVGA_comandostop_v1_0_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ov7670_QVGA_Image_Visualization_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ov7670_QVGA_ov7670_controller_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ov7670_QVGA_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ov7670_QVGA_proc_sys_reset_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ov7670_QVGA_debounce_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ov7670_QVGA_ov7670_capture_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ov7670_QVGA_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ov7670_QVGA_rgb444_to_grayscale_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ov7670_QVGA_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="captura_frame_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="captura_frame_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="captura_frame_ov7670_capture_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="captura_frame_ov7670_controller_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="captura_frame_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="captura_frame_Image_Visualization_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="captura_frame_debounce_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="captura_frame_comandostop_v1_0_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="captura_frame_rgb444_to_grayscale_0_0"/>
 </GenRun>

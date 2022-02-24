@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/synth_1'
+HD_PWD='C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log ov7670_QVGA_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov7670_QVGA_wrapper.tcl
+EAStep vivado -log captura_frame_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source captura_frame_wrapper.tcl

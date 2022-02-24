@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Feb 23 10:59:13 2022
-# Process ID: 10832
-# Current directory: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/synth_1
-# Command line: vivado.exe -log ov7670_QVGA_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov7670_QVGA_wrapper.tcl
-# Log file: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/synth_1/ov7670_QVGA_wrapper.vds
-# Journal file: C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.runs/synth_1\vivado.jou
+# Start of session at: Thu Feb 24 03:08:48 2022
+# Process ID: 4760
+# Current directory: C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.runs/synth_1
+# Command line: vivado.exe -log captura_frame_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source captura_frame_wrapper.tcl
+# Log file: C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.runs/synth_1/captura_frame_wrapper.vds
+# Journal file: C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source ov7670_QVGA_wrapper.tcl -notrace
+source captura_frame_wrapper.tcl -notrace

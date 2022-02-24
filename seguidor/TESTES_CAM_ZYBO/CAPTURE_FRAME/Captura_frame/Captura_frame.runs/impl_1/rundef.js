@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
-         "-log ov7670_QVGA_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source ov7670_QVGA_wrapper.tcl -notrace" );
+         "-log captura_frame_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source captura_frame_wrapper.tcl -notrace" );
 
 
 

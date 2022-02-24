@@ -1,4 +1,4 @@
-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 -- from https://www.xilinx.com/support/documentation/sw_manuals/xilinx2016_4/ug901-vivado-synthesis.pdf
 -- example page 115. Dual-Port block RAM with Two Write Ports in Read-First Mode (VHDL)
 -- 

@@ -1,6 +1,150 @@
-11:06:46 INFO  : Registering command handlers for SDK TCF services
-11:06:47 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\dougl\Desktop\CarPlatooning\seguidor\TESTES_CAM_ZYBO\CAPTURE_FRAME\Captura_frame\Captura_frame.sdk\temp_xsdb_launch_script.tcl
-11:06:54 INFO  : XSCT server has started successfully.
-11:07:14 INFO  : Successfully done setting XSCT server connection channel  
-11:07:14 INFO  : Successfully done setting SDK workspace  
-11:07:14 INFO  : Processing command line option -hwspec C:/Users/dougl/Desktop/CarPlatooning/seguidor/TESTES_CAM_ZYBO/CAPTURE_FRAME/Captura_frame/Captura_frame.sdk/ov7670_QVGA_wrapper.hdf.
+03:19:49 INFO  : Registering command handlers for SDK TCF services
+03:19:50 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\dougl\Desktop\TESTES_CAM_ZYBO\CAPTURE_FRAME\captura_frame\captura_frame.sdk\temp_xsdb_launch_script.tcl
+03:19:56 INFO  : XSCT server has started successfully.
+03:19:57 INFO  : Successfully done setting XSCT server connection channel  
+03:20:11 INFO  : Successfully done setting SDK workspace  
+03:20:11 INFO  : Processing command line option -hwspec C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper.hdf.
+03:35:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:35:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7901EA" && level==0} -index 1' command is executed.
+03:35:36 INFO  : FPGA configured successfully with bitstream "C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/captura_frame_wrapper.bit"
+03:35:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7901EA" && level==0} -index 1' command is executed.
+03:35:52 INFO  : 'fpga -state' command is executed.
+03:35:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:35:52 INFO  : Jtag cable 'Digilent Zybo 210279A7901EA' is selected.
+03:35:52 INFO  : 'jtag frequency' command is executed.
+03:35:52 INFO  : Sourcing of 'C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:35:52 INFO  : Context for 'APU' is selected.
+03:35:52 INFO  : Hardware design information is loaded from 'C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/system.hdf'.
+03:35:52 INFO  : 'configparams force-mem-access 1' command is executed.
+03:35:52 INFO  : Context for 'APU' is selected.
+03:35:53 INFO  : 'stop' command is executed.
+03:35:53 INFO  : 'ps7_init' command is executed.
+03:35:53 INFO  : 'ps7_post_config' command is executed.
+03:35:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:35:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:35:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:35:53 INFO  : The application 'C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/frame/Debug/frame.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:35:53 INFO  : 'configparams force-mem-access 0' command is executed.
+03:35:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+loadhw -hw C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+dow C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/frame/Debug/frame.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:35:54 INFO  : Memory regions updated for context APU
+03:35:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:35:54 INFO  : 'con' command is executed.
+03:35:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+con
+----------------End of Script----------------
+
+03:35:54 INFO  : Launch script is exported to file 'C:\Users\dougl\Desktop\TESTES_CAM_ZYBO\CAPTURE_FRAME\captura_frame\captura_frame.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_frame.elf_on_local.tcl'
+03:36:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:36:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7901EA" && level==0} -index 1' command is executed.
+03:36:44 INFO  : FPGA configured successfully with bitstream "C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/captura_frame_wrapper.bit"
+03:37:12 INFO  : Disconnected from the channel tcfchan#1.
+03:37:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7901EA" && level==0} -index 1' command is executed.
+03:37:14 INFO  : 'fpga -state' command is executed.
+03:37:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:37:14 INFO  : Jtag cable 'Digilent Zybo 210279A7901EA' is selected.
+03:37:14 INFO  : 'jtag frequency' command is executed.
+03:37:14 INFO  : Sourcing of 'C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:37:14 INFO  : Context for 'APU' is selected.
+03:37:18 INFO  : Hardware design information is loaded from 'C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/system.hdf'.
+03:37:18 INFO  : 'configparams force-mem-access 1' command is executed.
+03:37:19 INFO  : Context for 'APU' is selected.
+03:37:19 INFO  : 'stop' command is executed.
+03:37:19 INFO  : 'ps7_init' command is executed.
+03:37:19 INFO  : 'ps7_post_config' command is executed.
+03:37:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:37:19 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:37:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:37:19 INFO  : The application 'C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/frame/Debug/frame.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:37:19 INFO  : 'configparams force-mem-access 0' command is executed.
+03:37:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+loadhw -hw C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+dow C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/frame/Debug/frame.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:37:19 INFO  : Memory regions updated for context APU
+03:37:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:37:20 INFO  : 'con' command is executed.
+03:37:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+con
+----------------End of Script----------------
+
+03:37:20 INFO  : Launch script is exported to file 'C:\Users\dougl\Desktop\TESTES_CAM_ZYBO\CAPTURE_FRAME\captura_frame\captura_frame.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_frame.elf_on_local.tcl'
+03:38:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:38:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7901EA" && level==0} -index 1' command is executed.
+03:38:37 INFO  : FPGA configured successfully with bitstream "C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/captura_frame_wrapper.bit"
+03:38:50 INFO  : Disconnected from the channel tcfchan#2.
+03:38:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7901EA" && level==0} -index 1' command is executed.
+03:38:51 INFO  : 'fpga -state' command is executed.
+03:38:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:38:51 INFO  : Jtag cable 'Digilent Zybo 210279A7901EA' is selected.
+03:38:51 INFO  : 'jtag frequency' command is executed.
+03:38:51 INFO  : Sourcing of 'C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:38:51 INFO  : Context for 'APU' is selected.
+03:38:54 INFO  : Hardware design information is loaded from 'C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/system.hdf'.
+03:38:54 INFO  : 'configparams force-mem-access 1' command is executed.
+03:38:54 INFO  : Context for 'APU' is selected.
+03:38:54 INFO  : 'stop' command is executed.
+03:38:54 INFO  : 'ps7_init' command is executed.
+03:38:54 INFO  : 'ps7_post_config' command is executed.
+03:38:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:38:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:38:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:38:55 INFO  : The application 'C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/frame/Debug/frame.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:38:55 INFO  : 'configparams force-mem-access 0' command is executed.
+03:38:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+loadhw -hw C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/captura_frame_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+dow C:/Users/dougl/Desktop/TESTES_CAM_ZYBO/CAPTURE_FRAME/captura_frame/captura_frame.sdk/frame/Debug/frame.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:38:55 INFO  : Memory regions updated for context APU
+03:38:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:38:55 INFO  : 'con' command is executed.
+03:38:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279A7901EA"} -index 0
+con
+----------------End of Script----------------
+
+03:38:55 INFO  : Launch script is exported to file 'C:\Users\dougl\Desktop\TESTES_CAM_ZYBO\CAPTURE_FRAME\captura_frame\captura_frame.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_frame.elf_on_local.tcl'
+03:39:54 INFO  : Disconnected from the channel tcfchan#3.
